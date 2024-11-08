@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio_Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1><span class="M">M</span>ahesh.</h1>
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span class="M">Mahesh</span> <br>Konda From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-------------------------about-------------->
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                   <img id="mahi" src="mahesh.JPG">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I’m Mahesh Konda, a passionate software developer currently pursuing my Master's Degree at Oklahoma Christian University, Oklahoma. My journey into tech began with a Bachelor's Degree in Computer Science Engineering from Aurora's Technological and Research Institute, Hyderabad, India, where I developed a strong foundation in technology With expertise in frontend development and a drive to create impactful solutions. I enjoy working on innovative projects that challenge me to think creatively and solve problems. Collaboration and continuous learning are at the core of my development journey, and I’m always eager to work with teams that push the boundaries of what's possible.
+Starting with HTML and CSS, I quickly grew my skills across various web and software technologies. I am now focused on contributing to impactful projects and further honing my expertise.</p>
+                    <div class="titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing web/app interfaces </li>
+                            <li><span>Web Development</span><br>web app Development </li>
+                            <li><span>App Development</span><br>Building Andriod apps </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022-23</span><br>Technical Coordinator at Visght Technologies</li>
+                            <li><span>2020-2021</span><br>Front-end-web-Development from Internshalla</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023-current</span><br>MSE from Oklahoma Christian University</li>
+                            <li><span>2018-2022</span><br>CSE from Aurora's Technological and Research Institute </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-------------------Services------------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias aliquid quod illo at iusto totam, ipsam aut nulla? Delectus perspiciatis a omnis magni eius sequi iste officia numquam autem cumque.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>                   
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias aliquid quod illo at iusto totam, ipsam aut nulla? Delectus perspiciatis a omnis magni eius sequi iste officia numquam autem cumque.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>                    
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias aliquid quod illo at iusto totam, ipsam aut nulla? Delectus perspiciatis a omnis magni eius sequi iste officia numquam autem cumque.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-------------------portfolio------------------>
+<div id="portfolio">
+    <div class="container">
+        <div class="sub-title">My Work</div>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-list3.png">
+                <div class="layer">
+                    <h3>Task App</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime officiis iure molestias omnis. In, deserunt?</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-list1.webp">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime officiis iure molestias omnis. In, deserunt?</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-list2.jpeg">
+                <div class="layer">
+                    <h3>Music app</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime officiis iure molestias omnis. In, deserunt?</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-------------------contact------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>Contact@Example.com</p>
+                <p><i class="fas fa-phone-square-alt "></i>+1 405-320-7009</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="js_Java_sql_mahesh_Resume.docx" download class="btn btn2">Download Cv</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea type="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div> 
+    </div>
+    <div class="copyright">
+        <p>copyright@2024. Made with <i class="fas fa-heart"></i> By Mahesh Konda</p>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
