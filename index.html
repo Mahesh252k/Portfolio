@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio_Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1><span class="M">M</span>ahesh.</h1>
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <span class="M">Mahesh</span> <br>Konda From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-------------------------about-------------->
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                   <img id="mahi" src="mahesh1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I’m Mahesh Konda, a passionate software developer with expertise in full-stack development. I recently completed my Master’s Degree in Software Engineering at Oklahoma Christian University in February 2025. My journey into tech began with a Bachelor's Degree in Computer Science Engineering from Aurora's Technological and Research Institute, Hyderabad, India, where I built a strong foundation in technology.
+
+                        With skills in HTML, CSS, JavaScript, Java, MySQL, APIs, and Spring Boot, I thrive on building innovative and impactful solutions. I enjoy tackling complex challenges, thinking creatively, and collaborating with dynamic teams. Continuous learning and problem-solving are at the heart of my development journey, and I’m currently seeking exciting opportunities where I can contribute and grow as a software engineer. I am now focused on contributing to impactful projects and further honing my expertise.</p>
+                    <div class="titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-end-Development</span><br>web app Development </li>
+                            <li><span>Java and SpringBoot</span><br>Backend Development </li>
+                            <li><span>Mysql</span><br>Database </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022-23</span><br>Technical Coordinator at Visght Technologies</li>
+                            <li><span>2020-2021</span><br>Front-end-web-Development from Internshalla</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023-Feb 2025</span><br>MSE from Oklahoma Christian University</li>
+                            <li><span>2018-2022</span><br>CSE from Aurora's Technological and Research Institute </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-------------------Services------------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front-End Development</h2>
+                    <p>I specialize in creating responsive and dynamic web interfaces using HTML, CSS, and JavaScript. By leveraging modern frameworks and libraries, I ensure an interactive and seamless user experience across all devices.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>                   
+                    <h2>Backend Development</h2>
+                    <p>With expertise in Java, MySQL, and APIs, I develop robust and scalable backend systems. I focus on building efficient database structures and RESTful APIs to power dynamic web applications with seamless data management.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>                    
+                    <h2>Java fullStack</h2>
+                    <p>Combining front-end and back-end expertise, I develop full-stack applications using Java, Spring Boot, and MySQL. I design and implement end-to-end solutions that are efficient, maintainable, and secure.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-------------------portfolio------------------>
+<div id="portfolio">
+    <div class="container">
+        <div class="sub-title">My Work</div>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-list3.png">
+                <div class="layer">
+                    <h3>Task Management App</h3>
+                    <p>A feature-rich task management application built with JavaScript, HTML, and CSS. It allows users to create, update, and track tasks efficiently with an intuitive UI and seamless user experience.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-list1.webp">
+                <div class="layer">
+                    <h3>Social Media web Application</h3>
+                    <p>A dynamic social media platform developed using Java, Spring Boot, and MySQL. It enables user authentication, real-time interactions, and seamless content sharing with a scalable backend.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-list2.jpeg">
+                <div class="layer">
+                    <h3>Student Management System</h3>
+                     <p>A robust Java-based student management system designed to handle student records, course enrollments, and performance tracking. Built with Java, Spring Boot, and MySQL, it ensures seamless data management and scalability.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-------------------contact------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>maheshkonda550@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt "></i>+1 405-320-7009</p>
+                <div class="social-icons">
+                    <a href="www.linkedin.com/in/mahesh-konda-4a7211224"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                </div>
+                <a href="JavaFullStack_Mahesh.pdf" download class="btn btn2">Download Cv</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea type="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div> 
+    </div>
+    <div class="copyright">
+        <p>copyright@2024. Thanks for visiting. Made with <i class="fas fa-heart"></i> By Mahesh Konda</p>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
